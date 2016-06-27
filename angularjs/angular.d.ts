@@ -1720,13 +1720,13 @@ declare namespace angular {
          * Whether transclusion is enabled. Enabled by default.
          */
         transclude?: boolean | string | {[slot: string]: string};
-        require?: {[controller: string]: string};
+        //require?: {[controller: string]: string};
     }
 
     interface IComponentTemplateFn {
         ( $element?: JQuery, $attrs?: IAttributes ): string;
     }
-    
+
     /**
      * Components have a well-defined lifecycle Each component can implement "lifecycle hooks". These are methods that
      * will be called at certain points in the life of the component.
